@@ -1,0 +1,75 @@
+/* keep in mind that there are many different ways to write the CSS to get a similar result to what's in the README.md */
+
+body {
+  background-color: lavender;
+  font-family: monospace;
+}
+
+h1 {
+  /* rem is just another unit of measurement, just like pixels. try googling "rem CSS" to learn more about it*/
+  font-size: 2.5rem;
+
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: skyblue;
+
+  /* split the header up into two even columns using display: grid and grid-template-columns: 1fr 1fr; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* the read me specifies that the header should be at 75% width */
+  width: 75%;
+
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+main {
+  width: 75%;
+  display: grid;
+  justify-content: center;
+}
+
+section {
+  margin: 50px;
+  width: 60%;
+  margin-left: 22%;
+}
+
+select {
+  width: 26%;
+  margin-left: 20%;
+}
+
+form {
+  /* the three elements inside of the form ("Your Review" label, text input, and submit button) will sit in columns of widths 6, 25, and 15rem respectively */
+  display: grid;
+  grid-template-columns: 6rem 25rem 15rem;
+
+  margin: 0 auto;
+  width: 65%;
+}
+
+ul {
+  margin-left: 18%;
+}
+
+#written {
+  margin-right: 1.5rem;
+}
