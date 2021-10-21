@@ -12,7 +12,7 @@ fetch(url)
 
     let dropdown = document.querySelector("select");
 
-    //loop through all of the movies from our API call a
+    //loop through the movies from our API call and populate the dropdown with all the movie titles as options.
     for (let movie of movies) {
       const option = document.createElement("option");
       option.setAttribute("value", movie.title);
